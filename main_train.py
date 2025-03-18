@@ -1,39 +1,62 @@
 import numpy as np
-
-features = np.load('features.npy')
-labels = np.load('labels.npy')
-
+import pandas as pd
 from sklearn.preprocessing import StandardScaler
-
-# 标准化特征
-scaler = StandardScaler()
-features_scaled = scaler.fit_transform(features)
-
 from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
+import joblib
 
-# 划分训练集和测试集
-X_train, X_test, y_train, y_test = train_test_split(features_scaled, labels, test_size=0.2, random_state=42)
+def accuracy(features_scaled, labels):
+    # 将数据拆分为训练集和测试集
+    X_train, X_test, y_train, y_test = train_test_split(features_scaled, labels, test_size=0.3, random_state=42)
 
-from sklearn.svm import SVC
+    # 训练随机森林模型
+    rf_classifier = RandomForestClassifier(n_estimators=100, random_state=42)
+    rf_classifier.fit(X_train, y_train)
 
-# 创建SVM分类器
-svm_classifier = SVC(kernel='linear')  # 你可以选择不同的核函数，如 'rbf', 'poly' 等
+    # 进行预测
+    y_pred = rf_classifier.predict(X_test)
 
-# 训练模型
-svm_classifier.fit(X_train, y_train)
+    # 计算准确率
+    acc = accuracy_score(y_test, y_pred)
+    print(f'Accuracy: {acc:.4f}')
 
-from sklearn.metrics import accuracy_score, classification_report
+def model_train(input_file):
+    # 加载CSV文件到DataFrame
+    df = pd.read_csv(input_file)
 
-# 预测测试集
-y_pred = svm_classifier.predict(X_test)
+    # 显示DataFrame的前几行
+    print("Input Data Preview:")
+    print(df.head())
 
-# 计算准确率
-accuracy = accuracy_score(y_test, y_pred)
-print(f'Accuracy: {accuracy:.4f}')
+    # 分离特征和标签
+    features = df.drop(columns=['label']).values
+    labels = df['label'].values
 
-# 打印分类报告
-print(classification_report(y_test, y_pred))
+    # 标准化特征
+    scaler = StandardScaler()
+    features_scaled = scaler.fit_transform(features)
 
-# 实现在线训练，可以实时新添加数据
-# 对输入进行输出，可以把语音对应的说话人输出出来
+    # 计算并打印准确率
+    accuracy(features_scaled, labels)
 
+    # 初始化随机森林分类器
+    rf_classifier = RandomForestClassifier(n_estimators=100, random_state=42)
+
+    # 训练模型
+    rf_classifier.fit(features_scaled, labels)
+
+    # 保存模型
+    model_filename = 'random_forest_model.pkl'
+    joblib.dump(rf_classifier, model_filename)
+    print(f'Model saved to {model_filename}')
+
+    # （可选）保存标准化器以便后续使用
+    scaler_filename = 'standard_scaler.pkl'
+    joblib.dump(scaler, scaler_filename)
+    print(f'Scaler saved to {scaler_filename}')
+
+# 示例调用
+if __name__ == "__main__":
+    # 确保在调用时提供正确的输入文件路径
+    model_train('features_labels.csv')

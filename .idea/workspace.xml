@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4b347565-502d-4e37-85bc-6030a2348f46" name="更改" comment="The first commit, complete the main prediction process. extraction.py file is used to extract feature from voice files, and features.npy and labels.npy is the feature and label have already extracted. Use main_train.py to train the SVM model.">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/pythonProject2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extraction_function.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/features_labels.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/random_forest_model.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/standard_scaler.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svm_model.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev-clean/84/121550/84-121550-0000.flac" beforeDir="false" afterPath="$PROJECT_DIR$/test_audio/84-121550-0000.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev-clean/84/121550/84-121550-0001.flac" beforeDir="false" afterPath="$PROJECT_DIR$/test_audio/84-121550-0001.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extraction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_train.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2u3uWsNnyFcnk8RdrUQMcCBTHAc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Python.extraction.executor&quot;: &quot;Run&quot;,
+    &quot;Python.extraction_function.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main_function.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main_train.executor&quot;: &quot;Run&quot;,
+    &quot;Python.model_test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JerryHuang/作业/大三下半学期/Iot Security/lab1_ voice identity/pythonProject2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="extraction_function" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/extraction_function.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.extraction_function" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-PY-241.14494.241" />
+        <option value="bundled-python-sdk-0509580d9d50-28c9f5db9ffe-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.14494.241" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="4b347565-502d-4e37-85bc-6030a2348f46" name="更改" comment="" />
+      <created>1741489613507</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741489613507</updated>
+      <workItem from="1741489614890" duration="11492000" />
+      <workItem from="1741509571847" duration="883000" />
+      <workItem from="1741510543770" duration="301000" />
+      <workItem from="1741511128721" duration="664000" />
+      <workItem from="1741511808983" duration="6000" />
+      <workItem from="1741565021935" duration="2979000" />
+      <workItem from="1741612924841" duration="834000" />
+      <workItem from="1741659265583" duration="360000" />
+      <workItem from="1741851530875" duration="944000" />
+      <workItem from="1741852640889" duration="1498000" />
+      <workItem from="1741862235629" duration="468000" />
+      <workItem from="1741862758425" duration="1438000" />
+      <workItem from="1741864223103" duration="1216000" />
+      <workItem from="1741865512947" duration="410000" />
+      <workItem from="1741866550443" duration="7244000" />
+      <workItem from="1741922511058" duration="1583000" />
+      <workItem from="1741934657348" duration="1526000" />
+      <workItem from="1741947815883" duration="875000" />
+      <workItem from="1741948720971" duration="181000" />
+      <workItem from="1741948918075" duration="94000" />
+      <workItem from="1741949023621" duration="6214000" />
+      <workItem from="1742170086807" duration="6906000" />
+      <workItem from="1742256414604" duration="2488000" />
+    </task>
+    <task id="LOCAL-00001" summary="The first commit, complete the main prediction process. extraction.py file is used to extract feature from voice files, and features.npy and labels.npy is the feature and label have already extracted. Use main_train.py to train the SVM model.">
+      <option name="closed" value="true" />
+      <created>1741863298728</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1741863298728</updated>
+    </task>
+    <task id="LOCAL-00002" summary="The first commit, complete the main prediction process. extraction.py file is used to extract feature from voice files, and features.npy and labels.npy is the feature and label have already extracted. Use main_train.py to train the SVM model.">
+      <option name="closed" value="true" />
+      <created>1741865572925</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1741865572925</updated>
+    </task>
+    <task id="LOCAL-00003" summary="The first commit, complete the main prediction process. extraction.py file is used to extract feature from voice files, and features.npy and labels.npy is the feature and label have already extracted. Use main_train.py to train the SVM model.">
+      <option name="closed" value="true" />
+      <created>1741866726457</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1741866726457</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../../../.." />
+    </ignored-roots>
+    <MESSAGE value="The first commit, complete the main prediction process. extraction.py file is used to extract feature from voice files, and features.npy and labels.npy is the feature and label have already extracted. Use main_train.py to train the SVM model." />
+    <option name="LAST_COMMIT_MESSAGE" value="The first commit, complete the main prediction process. extraction.py file is used to extract feature from voice files, and features.npy and labels.npy is the feature and label have already extracted. Use main_train.py to train the SVM model." />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/pythonProject2$model_test.coverage" NAME="model_test 覆盖结果" MODIFIED="1742258220921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject2$extraction_function.coverage" NAME="extraction_function 覆盖结果" MODIFIED="1742256609523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject2$extraction.coverage" NAME="extraction 覆盖结果" MODIFIED="1741870124574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject2$main_function.coverage" NAME="main_function 覆盖结果" MODIFIED="1741511655531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject2$main_train.coverage" NAME="main_train 覆盖结果" MODIFIED="1742257185589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
